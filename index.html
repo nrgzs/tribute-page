@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="main">
+      <!--add navbar--> 
+      <!--<div class="navbar">
+        <ul>
+          <li><a class="nav-link" href="#facts">About</a></li>
+<li><a class="nav-link" href="#movie">Works</a></li>
+<li><a class="nav-link" href="#interview">Interview</a></li>
+        </ul>
+      </div> -->  
+      <section id="title-info">
+        <header class="header">Hayao Miyazaki</header>
+        <p><i>
+          Japanese animator, director, producer, screenwriter, author, and manga
+          artist and a co-founder of Studio Ghibli.</i>
+        </p>
+      </section>
+      <div class="middle">
+      <section id="img-info">
+        
+        <div class="img-container">
+          <img 
+            id="image-hayao"
+            alt="Hayao Miyazaki with his works"
+            src="./media/hayao miyazaki.jpg"
+          />
+          <div class="text">
+            Anime director Hayao Miyazaki speaks to reporters in March at his
+            studio in Koganei, western Tokyo. Next to him is a poster for his
+            film "Kaze Tachinu" ("The Wind Rises"), which was nominated for best
+            animated feature at last year's Academy Awards.
+          </div>
+        </div>
+      </section>
+      <section id="tribute-info">
+        <div class="facts-container">
+        <h3>Here's some facts about Hayao Miyazaki:</h3>
+        <div id="facts">
+          <ul>
+            <li>1941- Born in January 5 Tokyo, Japan.</li>
+            <li>1985- Hayao Miyazaki co-founded Studio Ghibli.</li>
+            <li>2015- He wins Acedemy Awards.</li>
+            <li>Hayao Miyazaki has already "retired" twice.</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+        <h3>Some of his notable works:</h3>
+        <div class="flex-movie" id="movie">
+          <!--add links to each movie-->
+          <div class="movie">
+            <a><img alt="Ponyo" src="./media/ponyo.jpg" /></a>
+            <div class="movie-overlay">
+            <p class="movie-title">Ponyo</p>
+            </div>
+          </div>
+          <div class="movie">
+            <a><img alt="Princess Mononoke" src="./media/mononoke.jpg" /></a>
+            <div class="movie-overlay">
+             <p class="movie-title">Princess Mononoke</p>
+             </div>
+          </div>
+          <div class="movie">
+            <a
+              ><img
+                alt="Nausicaä of the Valley of the Wind"
+                src="./media/nausicaa.jpg"
+            /></a>
+            <div class="movie-overlay">
+            <p class="movie-title">Nausicaä of the Valley of the Wind</p>
+            </div>
+          </div>
+          <div class="movie">
+            <a><img alt="Sprited away" src="./media/sprited away.jpg" /></a>
+            <div class="movie-overlay"><p class="movie-title">Sprited Away</p>
+      
+          </div>  </div>
+        </div>
+        <div id="interview">
+        <blockquote
+          cite="http://www.midnighteye.com/interviews/hayao-miyazaki/"
+        >
+          <p>
+            I'm not a storyteller, I'm a man who draws pictures. However, I do
+            believe in the power of story. I believe that stories have an
+            important role to play in the formation of human beings, that they
+            can stimulate, amaze and inspire their listeners
+          </p>
+          <cite>Hayao Miyazaki</cite>
+        </blockquote>
+        <div id="link">
+          <h3>
+            If you want to learn more about him, you should check his
+            <a
+              id="tribute-link"
+              target="_blank"
+              href="http://www.midnighteye.com/interviews/hayao-miyazaki/"
+              >interview</a></h3>
+        </div>
+        </div>
+      </section>
+    </main>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
