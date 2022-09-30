@@ -1,10 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
-  background-color: rgba(0, 128, 128, 0.6);
+  background-color: #bfd7ec;
 }
 main {
-  background-color: rgba(192, 192, 192, 0.7);
+  background-color: #cfe0f1;
   width: 80%;
   height: auto;
   margin: auto;
@@ -32,7 +32,7 @@ main {
 .img-container {
   width: 100%;
   max-width: 550px;
-  background-color: rgba(162, 160, 160, 0.742);
+  background-color: #dfeaf6;
   box-shadow: 0 4px 8px 0 gray;
   margin-bottom: 25px;
   border-radius: 20px;
